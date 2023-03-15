@@ -1,155 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Máquina de pensamientos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/342c15cb14.css" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-<body class="xbg"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/342c15cb14.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="/maquina_de_pensamientos/assets/css/style.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="xbg">
     <section class="">
-        <div class="container text-center mt-5 mb-5">
-            <h1>Máquina de pensamientos</h1>
-        </div>
+      <div class="container text-center mt-5 mb-5">
+        <h1>Máquina de pensamientos</h1>
+      </div>
     </section>
     <section class="">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <form>
-                    <div class="mb-3">
-                        <label for="form-titulo" class="form-label">Titulo:</label>
-                        <input id="form-titulo" name="form-titulo" type="text" class="form-control"  placeholder="Nuevo título">
-                    </div>
-                    <div class="mb-3">
-                        <label for="form-pensamiento" class="form-label xlabel">Cuéntanos cual es tu pensamiento del día: </label>
-                        <textarea id="form-pensamiento" name="form-pensamiento" class="form-control xform-text"  rows="3" maxlength="400" placeholder="Hola..."></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="form-nombre" class="form-label">¿Te gustaría compartir tu nombre?:</label>
-                        <input id="form-nombre" name="form-nombre" type="text" class="form-control"  placeholder="Anonimo">
-                    </div>
-                    <fieldset>
-                        <label for="form-fondo" class="form-label xlabel">Selecciona un fondo: </label>
-                        <div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo1" class="form-check-input xcheck" type="radio" name="fondo-type" /> 
-                                    <img src="/assets/img/f1.png" class="rounded img-thumbnail xthumbnail" alt="f1" for="form-fondo1">
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo2" class="form-check-input xcheck" type="radio" name="fondo-type" /> 
-                                    <img src="/assets/img/f2.png" class="rounded img-thumbnail xthumbnail" alt="f1" for="form-fondo1">
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo3" class="form-check-input xcheck" type="radio" name="fondo-type" /> 
-                                    <img src="/assets/img/f3.png" class="rounded img-thumbnail xthumbnail" alt="f1" for="form-fondo1">
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo4" class="form-check-input xcheck" type="radio" name="fondo-type" /> 
-                                    <img src="/assets/img/f4.png" class="rounded img-thumbnail xthumbnail" alt="f1" for="form-fondo1">
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo5" class="form-check-input xcheck" type="radio" name="fondo-type" /> 
-                                    <img src="/assets/img/f5.png" class="rounded img-thumbnail xthumbnail" alt="f1" for="form-fondo1">
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo6" class="form-check-input xcheck" type="radio" name="fondo-type" /> 
-                                    <img src="/assets/img/f6.png" class="rounded img-thumbnail xthumbnail" alt="f1" for="form-fondo1">
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <label for="form-icono" class="form-label xlabel">Selecciona un icono: </label>
-                        <div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo1" class="form-check-input xcheck" type="radio" name="ico-type" /> 
-                                    <i class="fa-regular fa-user xthumbnail"></i>
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo2" class="form-check-input xcheck" type="radio" name="ico-type" /> 
-                                    <i class="fa-regular fa-star xthumbnail"></i>
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo3" class="form-check-input xcheck" type="radio" name="ico-type" /> 
-                                    <i class="fa-regular fa-heart xthumbnail"></i>
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo4" class="form-check-input xcheck" type="radio" name="ico-type" /> 
-                                    <i class="fa-regular fa-moon xthumbnail"></i>
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo5" class="form-check-input xcheck" type="radio" name="ico-type" /> 
-                                    <i class="fa-regular fa-comment xthumbnail"></i>
-                                </div>
-                            </div>
-                            <div class="col mb-3 form-check-inline">
-                                <div>
-                                    <input id="form-fondo6" class="form-check-input xcheck" type="radio" name="ico-type" /> 
-                                    <i class="fa-regular fa-paper-plane xthumbnail"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="text-center">
-                        <button id="btn-crear" type="submit" class="btn btn-primary">Crear</button>
-                        <button id="btn-random"type="submit" class="btn btn-secondary">Nuestro pensamiento</button>
-                    </div>
-                  </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <form>
+              <div class="mb-3">
+                <label for="form-titulo" class="form-label">Titulo:</label>
+                <input
+                  id="form-titulo"
+                  name="form-titulo"
+                  type="text"
+                  class="form-control"
+                  placeholder="Nuevo título"
+                />
               </div>
-              <div class="col-md-6 col-sm-12 xsecction-result">
-                <!-- Inicio del contenido creado -->
-                <div id="result" class="text-center xresult xbg-base xbg-1">
-                    <i class="mt-5 xico-card fa-regular fa-comment "></i>
-                    <h2 class="pt-3 xtitulo-card">TÍTULO</h2>
-                    <h3 class="pb-3 xfecha-card">11/03/2023</h3>
-                    <div class="xpensamiento-card">
-                        <figure>
-                            <blockquote class="blockquote pe-3 ps-3 xp-card">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repellat labore quod sint incidunt facere perferendis odio mollitia voluptate, fuga eius id nemo libero cumque a harum numquam enim ipsum!.</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer mt-3 xcita-card">
-                              ATTE: <cite title="nombre"class="xcita-card2">Nombre</cite>
-                            </figcaption>
-                        </figure>
+              <div class="mb-3">
+                <label for="form-pensamiento" class="form-label xlabel"
+                  >Cuéntanos cual es tu pensamiento del día:
+                </label>
+                <input
+                  id="form-pensamiento"
+                  name="form-pensamiento"
+                  class="form-control xform-text"
+                  rows="3"
+                  maxlength="400"
+                  placeholder="Hola..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="form-nombre" class="form-label"
+                  >¿Te gustaría compartir tu nombre?:</label
+                >
+                <input
+                  id="form-nombre"
+                  name="form-nombre"
+                  type="text"
+                  class="form-control"
+                  placeholder="Anonimo"
+                />
+              </div>
+              <fieldset>
+                <label for="form-fondo" class="form-label xlabel"
+                  >Selecciona un fondo:
+                </label>
+                <div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="xbg-1"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="fondo-type"
+                      />
+                      <img
+                        src="/maquina_de_pensamientos/assets/img/f1.png"
+                        class="rounded img-thumbnail xthumbnail"
+                        alt="f1"
+                        for="form-fondo1"
+                      />
                     </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo2"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="fondo-type"
+                      />
+                      <img
+                        src="/maquina_de_pensamientos/assets/img/f2.png"
+                        class="rounded img-thumbnail xthumbnail"
+                        alt="f1"
+                        for="form-fondo1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo3"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="fondo-type"
+                      />
+                      <img
+                        src="/maquina_de_pensamientos/assets/img/f3.png"
+                        class="rounded img-thumbnail xthumbnail"
+                        alt="f1"
+                        for="form-fondo1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo4"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="fondo-type"
+                      />
+                      <img
+                        src="/maquina_de_pensamientos/assets/img/f4.png"
+                        class="rounded img-thumbnail xthumbnail"
+                        alt="f1"
+                        for="form-fondo1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo5"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="fondo-type"
+                      />
+                      <img
+                        src="/maquina_de_pensamientos/assets/img/f5.png"
+                        class="rounded img-thumbnail xthumbnail"
+                        alt="f1"
+                        for="form-fondo1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo6"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="fondo-type"
+                      />
+                      <img
+                        src="/maquina_de_pensamientos/assets/img/f6.png"
+                        class="rounded img-thumbnail xthumbnail"
+                        alt="f1"
+                        for="form-fondo1"
+                      />
+                    </div>
+                  </div>
                 </div>
-                 <!-- Fin del contenido creado -->
+              </fieldset>
+              <fieldset>
+                <label for="form-icono" class="form-label xlabel"
+                  >Selecciona un icono:
+                </label>
+                <div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo1"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="ico-type"
+                      />
+                      <i class="fa-regular fa-user xthumbnail"></i>
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo2"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="ico-type"
+                      />
+                      <i class="fa-regular fa-star xthumbnail"></i>
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo3"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="ico-type"
+                      />
+                      <i class="fa-regular fa-heart xthumbnail"></i>
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo4"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="ico-type"
+                      />
+                      <i class="fa-regular fa-moon xthumbnail"></i>
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo5"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="ico-type"
+                      />
+                      <i class="fa-regular fa-comment xthumbnail"></i>
+                    </div>
+                  </div>
+                  <div class="col mb-3 form-check-inline">
+                    <div>
+                      <input
+                        id="form-fondo6"
+                        class="form-check-input xcheck"
+                        type="radio"
+                        name="ico-type"
+                      />
+                      <i class="fa-regular fa-paper-plane xthumbnail"></i>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="text-center">
+                <button id="btn-crear" type="submit" class="btn btn-primary">
+                  Crear
+                </button>
+                <button id="btn-random" type="submit" class="btn btn-secondary">
+                  Nuestro pensamiento
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 col-sm-12 xsecction-result text-center">
+            <!-- Inicio del contenido creado -->
+            <div id="result" class="xresult xbg-base xbg-none">
+              <i class="mt-5 xico-card fa-regular fa-comment"></i>
+              <h2 class="pt-3 xtitulo-card" id="TituloCreado">TÍTULO</h2>
+              <h3 class="pb-3 xfecha-card" id="current_date"></h3>
+              <div class="xpensamiento-card" id="PensamientoCreado">
+                <figure>
+                  <blockquote class="blockquote pe-3 ps-3 xp-card">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad repellat labore quod sint incidunt facere perferendis
+                      odio mollitia voluptate, fuga eius id nemo libero cumque a
+                      harum numquam enim ipsum!.
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-3 xcita-card">
+                    ATTE:
+                    <cite title="nombre" class="xcita-card2" id="NombreCreado"
+                      >Nombre</cite
+                    >
+                  </figcaption>
+                </figure>
               </div>
             </div>
+            <!-- Fin del contenido creado -->
           </div>
+        </div>
+      </div>
     </section>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/342c15cb14.js" crossorigin="anonymous"></script>
-
+    <script src="/maquina_de_pensamientos/assets/js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/342c15cb14.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
